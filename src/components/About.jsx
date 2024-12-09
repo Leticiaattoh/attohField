@@ -24,7 +24,7 @@ const About = () => {
 
       {/* Text Section */}
       <div
-        className="w-[50%] md:w-1/2 text-white md:pl-8 p-4"
+        className="w-[90%] md:w-1/2 text-white md:pl-8 p-4"
         data-aos="slide-up" // Slide-up animation on scroll
         data-aos-duration="1000"
         data-aos-offset="100"
