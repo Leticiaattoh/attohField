@@ -3,51 +3,90 @@ import {
   faFacebook,
   faLinkedin,
   faInstagram,
-  faXTwitter
+  faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Footer = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen((prev) => !prev);
+  };
+
   return (
     <footer className="bg-gray-900 p-6 pt-[5%]">
-      <div className="container mx-auto  justify-center flex flex-col md:flex-row items-center space-y-12 md:space-y-0 md:space-x-12">
+      <div className="container mx-auto justify-center flex flex-col md:flex-row items-center space-y-12 md:space-y-0 md:space-x-12">
         {/* Quick Links */}
-        <div className="flex flex-col items-start  space-y-2 text-left">
+        <div className="flex flex-col items-start space-y-2 text-left">
           <h4 className="text-base text-white font-bold">Quick Links</h4>
 
           <Link
-            className="text-gray-400 hover:text-[#83CA13]  text-sm"
-            to="/ShopNow"
+            className="text-gray-400 hover:text-[#83CA13] text-sm"
+            to="/Shop-now"
           >
             Shop Now
           </Link>
+
+          {/* Dropdown for Branches */}
+          <div className="relative group">
+            <button
+              onClick={toggleDropdown}
+              className="text-gray-400 hover:text-[#83CA13]  text-sm flex items-center gap-1"
+            >
+              Branches
+              <span className="text-xs">▼</span>
+            </button>
+            <div
+              className={`absolute top-full left-0 mt-1 bg-gray-700 h-[22vh] shadow-lg rounded-lg py-2 ${
+                isDropdownOpen ? "block" : "hidden"
+              } group-hover:block`}
+            >
+              <ul>
+                <li>
+                  <Link
+                    to=""
+                    className="block px-4 py-2 hover:bg-[#83CA13] hover:text-white text-sm text-white"
+                  >
+                    Lartebiokorshie-0548453002/ 0249277113
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to=""
+                    className="block px-4 py-2 hover:bg-[#83CA13] hover:text-white text-sm text-white"
+                  >
+                    Spintex-0543344036
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <Link
-            className="text-gray-400 hover:text-[#83CA13]  text-sm"
-            to="/Branches"
-          >
-            Branches
-          </Link>
-          <Link
-            className="text-gray-400 hover:text-[#83CA13]  text-sm"
-            to="Feedback"
+            className="text-gray-400 hover:text-[#83CA13] text-sm"
+            to="/Feedback"
           >
             Feedback
           </Link>
         </div>
 
-        {/* Newsletter Subscription */}
+        {/* Legal Links */}
         <div className="flex flex-col items-start space-y-2 text-left">
-          <h4 className="text-base text-white font-bold">
-            Subscribe to our Newsletter
-          </h4>
-          <input
-            type="email"
-            placeholder="Your email"
-            className="p-1 rounded bg-gray-800 text-white text-sm"
-          />
-          <button className="bg-[#83CA13] hover:bg-[#4a9852] text-white p-1 rounded text-sm  transition-transform duration-300 hover:scale-105">
-            Subscribe
-          </button>
+          <h4 className="text-base text-white font-bold">Legal</h4>
+          <Link
+            className="text-gray-400 hover:text-[#83CA13] text-sm"
+            to="/privacy-policy"
+          >
+            Privacy Policy
+          </Link>
+          <Link
+            className="text-gray-400 hover:text-[#83CA13] text-sm"
+            to="/terms-of-service"
+          >
+            Terms of Service
+          </Link>
         </div>
 
         {/* Contact Information */}
@@ -67,7 +106,7 @@ const Footer = () => {
           href="https://twitter.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-400 hover:text-[#83CA13] transition-transform duration-300 hover:scale-150 "
+          className="text-gray-400 hover:text-[#83CA13] transition-transform duration-300 hover:scale-150"
         >
           <FontAwesomeIcon icon={faXTwitter} className="text-sm" />
         </a>
@@ -75,7 +114,7 @@ const Footer = () => {
           href="https://web.facebook.com/people/Attoh-Field/61556844487316/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-400 hover:text-[#83CA13]  transition-transform duration-300 hover:scale-150 "
+          className="text-gray-400 hover:text-[#83CA13] transition-transform duration-300 hover:scale-150"
         >
           <FontAwesomeIcon icon={faFacebook} className="text-sm" />
         </a>
@@ -83,7 +122,7 @@ const Footer = () => {
           href="https://linkedin.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-400 hover:text-[#83CA13]  transition-transform duration-300 hover:scale-150 "
+          className="text-gray-400 hover:text-[#83CA13] transition-transform duration-300 hover:scale-150"
         >
           <FontAwesomeIcon icon={faLinkedin} className="text-sm" />
         </a>
@@ -91,7 +130,7 @@ const Footer = () => {
           href="https://www.instagram.com/attohfield.gh"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-400 hover:text-[#83CA13]  transition-transform duration-300 hover:scale-150 "
+          className="text-gray-400 hover:text-[#83CA13] transition-transform duration-300 hover:scale-150"
         >
           <FontAwesomeIcon icon={faInstagram} className="text-sm" />
         </a>

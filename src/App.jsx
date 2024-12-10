@@ -1,12 +1,18 @@
 import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import LandingPage from './pages/LandingPage';
+import ShopNow from './components/ShopNow';
+import ShopNowPage from './pages/ShopNowPage';
 
 function App() {
   const router = createBrowserRouter([
     {
       path: '/',
       element: <LandingPage />
+    },
+    {
+      path: '/shop-now',
+      element: <ShopNowPage />
     },
   ]);
 

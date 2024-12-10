@@ -3,6 +3,7 @@ import hero from "../assets/Images/hero.jpeg"
 import pigfarm9 from "../assets/Images/pigfarm9.jpg"
 import pigfarm6 from "../assets/Images/pigfarm6.jpg"
 import { Carousel } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
 
@@ -31,12 +32,14 @@ const Hero = () => {
             We deliver Fresh Pork!
           </h1>
 
-          <button className="flex items-center justify-center gap-5 border-2 border-white bg-[#3A703F] transition-transform duration-300 hover:scale-105 hover:bg-[#83CA13] focus:outline-none focus:ring border-1 px-4 py-2 w-[250px] h-[70px] rounded-lg text-white font-bold text-3xl shadow-2xl">
-            Discover
-            <span className="mt-2">
-              <FaArrowAltCircleRight />
-            </span>
-          </button>
+          <Link to="/shop-now">
+            <button className="flex items-center justify-center gap-5 border-2 border-white bg-[#3A703F] hover:bg-[#83CA13] focus:outline-none focus:ring border-1 px-4 py-2 w-[250px] h-[70px] transition-transform duration-300 hover:scale-105 rounded-lg text-white font-bold text-3xl shadow-2xl">
+              Discover
+              <span className="mt-2">
+                <FaArrowAltCircleRight />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
       {/* slider2 */}
@@ -56,12 +59,14 @@ const Hero = () => {
             Take your tastebuds on an adventure!
           </h1>
 
-          <button className="flex items-center justify-center gap-5 border-2 border-white bg-[#3A703F] hover:bg-[#83CA13] focus:outline-none focus:ring border-1 px-4 py-2 w-[250px] h-[70px] rounded-lg  transition-transform duration-300 hover:scale-105 text-white font-bold text-3xl shadow-2xl">
-            Discover
-            <span className="mt-2">
-              <FaArrowAltCircleRight />
-            </span>
-          </button>
+          <Link to="/shop-now">
+            <button className="flex items-center justify-center gap-5 border-2 border-white bg-[#3A703F] hover:bg-[#83CA13] focus:outline-none focus:ring border-1 px-4 py-2 w-[250px] h-[70px] transition-transform duration-300 hover:scale-105 rounded-lg text-white font-bold text-3xl shadow-2xl">
+              Discover
+              <span className="mt-2">
+                <FaArrowAltCircleRight />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
       {/* slider3 */}
@@ -81,12 +86,14 @@ const Hero = () => {
             Purely Pork, Perfectly Fresh!
           </h1>
 
-          <button className="flex items-center justify-center gap-5 border-2 border-white bg-[#3A703F] hover:bg-[#83CA13] focus:outline-none focus:ring border-1 px-4 py-2 w-[250px] h-[70px]  transition-transform duration-300 hover:scale-105 rounded-lg text-white font-bold text-3xl shadow-2xl">
-            Discover
-            <span className="mt-2">
-              <FaArrowAltCircleRight />
-            </span>
-          </button>
+          <Link to="/shop-now">
+            <button className="flex items-center justify-center gap-5 border-2 border-white bg-[#3A703F] hover:bg-[#83CA13] focus:outline-none focus:ring border-1 px-4 py-2 w-[250px] h-[70px] transition-transform duration-300 hover:scale-105 rounded-lg text-white font-bold text-3xl shadow-2xl">
+              Discover
+              <span className="mt-2">
+                <FaArrowAltCircleRight />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </Carousel>

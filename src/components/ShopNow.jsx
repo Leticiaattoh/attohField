@@ -51,8 +51,17 @@ const ShopNow = () => {
               {product.name}
             </h3>
             <p className="text-lg text-gray-700 my-4">{product.price}</p>
-            <button className="bg-[#3A703F] text-white p-3 rounded-full hover:bg-[#83CA13] transition-colors">
-              <FaPlus className="text-lg" />
+            <button className="bg-[#3A703F] text-white p-3 rounded-[7px] hover:bg-[#83CA13] transition-colors">
+              <a
+                href={`https://wa.me/+233551551878?text=${encodeURIComponent(
+                  "Good day. I would like to buy some pork!"
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="fa fa-whatsapp"
+              >
+                Order Now
+              </a>
             </button>
           </div>
         ))}
