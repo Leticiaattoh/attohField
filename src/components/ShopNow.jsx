@@ -53,8 +53,8 @@ const ShopNow = () => {
             <p className="text-lg text-gray-700 my-4">{product.price}</p>
             <button className="bg-[#3A703F] text-white p-3 rounded-[7px] hover:bg-[#83CA13] transition-colors">
               <a
-                href={`https://wa.me/+233551551878?text=${encodeURIComponent(
-                  "Good day. I would like to buy some pork!"
+                href={`https://wa.me/+233249277113?text=${encodeURIComponent(
+                  "Welcome to Attohfield. We specialize in providing high-quality, fresh pork products to meet all your needs. What would you like to order today?"
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"

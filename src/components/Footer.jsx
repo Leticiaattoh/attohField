@@ -47,7 +47,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to=""
-                    className="block px-4 py-2 hover:bg-[#83CA13] hover:text-white text-sm text-white"
+                    className="block px-4 py-2 text-gray-400 hover:text-[#83CA13] text-sm"
                   >
                     Lartebiokorshie-0548453002/ 0249277113
                   </Link>
@@ -55,7 +55,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to=""
-                    className="block px-4 py-2 hover:bg-[#83CA13] hover:text-white text-sm text-white"
+                    className="block px-4 py-2 text-gray-400 hover:text-[#83CA13] text-sm"
                   >
                     Spintex-0543344036
                   </Link>
@@ -63,38 +63,35 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-
-          <Link
-            className="text-gray-400 hover:text-[#83CA13] text-sm"
-            to="/Feedback"
-          >
-            Feedback
-          </Link>
         </div>
 
         {/* Legal Links */}
         <div className="flex flex-col items-start space-y-2 text-left">
           <h4 className="text-base text-white font-bold">Legal</h4>
-          <Link
+          <p
             className="text-gray-400 hover:text-[#83CA13] text-sm"
             to="/privacy-policy"
           >
             Privacy Policy
-          </Link>
-          <Link
+          </p>
+          <p
             className="text-gray-400 hover:text-[#83CA13] text-sm"
             to="/terms-of-service"
           >
             Terms of Service
-          </Link>
+          </p>
         </div>
 
         {/* Contact Information */}
         <div className="flex flex-col items-start space-y-2 text-left">
           <h4 className="text-base text-white font-bold">Contact Us</h4>
-          <p className="text-gray-400 text-sm">Email: info@attohField.com</p>
-          <p className="text-gray-400 text-sm">Phone: 05543344036</p>
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-400 hover:text-[#83CA13] text-sm">
+            Email: info@attohfield.com
+          </p>
+          <p className="text-gray-400 hover:text-[#83CA13] text-sm">
+            Phone: 0249277113
+          </p>
+          <p className="text-gray-400 hover:text-[#83CA13] text-sm">
             Address: Lartebiokorshie, Accra
           </p>
         </div>
@@ -119,7 +116,7 @@ const Footer = () => {
           <FontAwesomeIcon icon={faFacebook} className="text-sm" />
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-[#83CA13] transition-transform duration-300 hover:scale-150"

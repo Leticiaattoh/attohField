@@ -53,7 +53,7 @@ const Navbar = () => {
             />
           </a>
           <a
-            href="https://www.linkedin.com/login"
+            href="https://www.linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -94,12 +94,16 @@ const Navbar = () => {
                 Home
               </li>
             </Link>
+
             <li className="no-underline  hover:underline transition-transform duration-300 hover:scale-105">
               About
             </li>
-            <li className="no-underline  hover:underline transition-transform duration-300 hover:scale-105">
-              Products
-            </li>
+
+            <Link to="/shop-now">
+              <li className="no-underline  hover:underline transition-transform duration-300 hover:scale-105">
+                Products
+              </li>
+            </Link>
             <li className="no-underline  hover:underline transition-transform duration-300 hover:scale-105">
               Contact
             </li>

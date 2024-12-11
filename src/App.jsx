@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import LandingPage from './pages/LandingPage';
 import ShopNow from './components/ShopNow';
 import ShopNowPage from './pages/ShopNowPage';
+import About from './components/About';
 
 function App() {
   const router = createBrowserRouter([
@@ -14,6 +15,7 @@ function App() {
       path: '/shop-now',
       element: <ShopNowPage />
     },
+    
   ]);
 
   return <RouterProvider router={router} />
