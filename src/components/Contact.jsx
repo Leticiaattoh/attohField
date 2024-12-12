@@ -38,7 +38,7 @@ const Contact = () => {
             {/* Address */}
             {/* New Section with Location Links */}
             <div className="mt-[10%]">
-              <h4 className="text-lg font-semibold mb-4">
+              <h4 className="text-lg font-semibold text-center mb-4">
                 Our Locations Links
               </h4>
               <div className="space-y-2">
@@ -97,7 +97,7 @@ const Contact = () => {
         </div>
 
         {/* Visit Our Farms Section */}
-        <div className="mt-8 bg-gray-100 p-6 rounded-lg text-center">
+        <div className="mt-28 bg-gray-100 p-6 rounded-lg text-center">
           <h4 className="text-lg font-semibold mb-4">Visit Our Farms</h4>
           <p className="text-gray-600 mb-4">
             Want to visit our farms? Book a visit today and experience our
