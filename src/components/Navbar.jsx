@@ -7,8 +7,10 @@ import {
   faInstagram,
   faLinkedin,
   faXTwitter,
+  
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
+import { faXmark } from "@fortawesome/free-solid-svg-icons"; 
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -116,6 +118,14 @@ const Navbar = () => {
             menuActive ? "translate-x-0" : "translate-x-full"
           }`}
         >
+          {/* Close Button */}
+          <button
+            onClick={() => setMenuActive(false)}
+            className="self-end text-2xl text-white mb-4 focus:outline-none"
+          >
+            <FontAwesomeIcon icon={faXmark} />
+          </button>
+
           <Link
             to="/"
             onClick={() => setMenuActive(false)}
@@ -151,4 +161,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
