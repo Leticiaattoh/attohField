@@ -38,7 +38,7 @@ const Contact = () => {
             {/* Address */}
             {/* New Section with Location Links */}
             <div className="mt-[10%]">
-              <h4 className="text-lg font-semibold  mb-4">
+              <h4 className="text-lg font-semibold mb-4">
                 Our Locations Links
               </h4>
               <div className="space-y-2">

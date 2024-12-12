@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import attohFeild from "../assets/Images/attohField.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,10 +6,9 @@ import {
   faInstagram,
   faLinkedin,
   faXTwitter,
-  
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
-import { faXmark, faXmarkSquare } from "@fortawesome/free-solid-svg-icons"; 
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -22,15 +20,14 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 w-full z-50">
       {/* Top Navbar */}
-      <div className="flex flex-wrap justify-between items-center px-2 py-2 bg-[#3A703F]">
+      <div className="flex justify-between items-center px-2 py-2 bg-[#3A703F]">
         {/* Logo and Company Name */}
         <div className="flex items-center gap-2">
           <img
             src={attohFeild}
-            alt="attohField Logo"
+            alt="AttohField Logo"
             className="h-10 w-10 border-1 rounded-full"
           />
-          {/* <div className="text-sm font-extrabold text-white">AttohField</div> */}
         </div>
 
         {/* Social Media Icons */}
@@ -73,7 +70,48 @@ const Navbar = () => {
       {/* Bottom Navbar */}
       <div className="bg-[#83CA13] text-white shadow-lg">
         <div className="flex justify-between items-center px-4 py-2 md:px-6">
-          {/* Hamburger Menu Button */}
+          {/* Welcome Text for Mobile */}
+          <div className="text-sm font-extrabold text-white md:hidden">
+            Welcome to Attohfield!
+          </div>
+
+          {/* Navigation Links (Desktop) */}
+          <div className="hidden md:flex gap-4 list-none font-extrabold justify-between w-full text-sm md:text-md lg:text-lg">
+            {/* Welcome Text on the Left */}
+            <div className="text-sm font-extrabold text-white">
+              Welcome to Attohfield!
+            </div>
+
+            {/* Navigation Links */}
+            <div className="flex gap-4">
+              <Link
+                to="/"
+                className="no-underline hover:underline transition-transform duration-300 hover:scale-105"
+              >
+                Home
+              </Link>
+              <Link
+                to="/about"
+                className="no-underline hover:underline transition-transform duration-300 hover:scale-105"
+              >
+                About
+              </Link>
+              <Link
+                to="/shop-now"
+                className="no-underline hover:underline transition-transform duration-300 hover:scale-105"
+              >
+                Products
+              </Link>
+              <Link
+                to="/contact"
+                className="no-underline hover:underline transition-transform duration-300 hover:scale-105"
+              >
+                Contact
+              </Link>
+            </div>
+          </div>
+
+          {/* Hamburger Menu Button (Right) */}
           <button
             onClick={toggleMenu}
             className="text-white focus:outline-none md:hidden"
@@ -82,37 +120,9 @@ const Navbar = () => {
             <div className="w-6 h-0.5 bg-white mb-1"></div>
             <div className="w-6 h-0.5 bg-white"></div>
           </button>
-
-          {/* Navigation Links */}
-          <div className="hidden md:flex gap-4 list-none font-extrabold justify-center w-full text-sm md:text-md lg:text-lg">
-            <Link
-              to="/"
-              className="no-underline hover:underline transition-transform duration-300 hover:scale-105"
-            >
-              Home
-            </Link>
-            <Link
-              to="/about"
-              className="no-underline hover:underline transition-transform duration-300 hover:scale-105"
-            >
-              About
-            </Link>
-            <Link
-              to="/shop-now"
-              className="no-underline hover:underline transition-transform duration-300 hover:scale-105"
-            >
-              Products
-            </Link>
-            <Link
-              to="/contact"
-              className="no-underline hover:underline transition-transform duration-300 hover:scale-105"
-            >
-              Contact
-            </Link>
-          </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu (Opens from the Right) */}
         <div
           className={`fixed top-0 right-0 h-screen w-3/4 max-w-xs bg-[#83CA13] text-white flex flex-col items-start justify-start px-4 pt-6 transform transition-transform duration-300 md:hidden ${
             menuActive ? "translate-x-0" : "translate-x-full"
@@ -161,5 +171,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
