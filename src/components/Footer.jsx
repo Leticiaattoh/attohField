@@ -49,7 +49,7 @@ const Footer = () => {
                     to=""
                     className="block px-4 py-2 text-gray-400 hover:text-[#83CA13] text-sm"
                   >
-                    Lartebiokorshie-0548453002/ 0249277113
+                    Lartebiokorshie-+233548453002/ +233249277113
                   </Link>
                 </li>
                 <li>
@@ -57,7 +57,7 @@ const Footer = () => {
                     to=""
                     className="block px-4 py-2 text-gray-400 hover:text-[#83CA13] text-sm"
                   >
-                    Spintex-0543344036
+                    Spintex-+233543344036
                   </Link>
                 </li>
               </ul>
@@ -68,28 +68,32 @@ const Footer = () => {
         {/* Legal Links */}
         <div className="flex flex-col items-start space-y-2 text-left">
           <h4 className="text-base text-white font-bold">Legal</h4>
-          <p
+          <Link to="/privacy-policy"
             className="text-gray-400 hover:text-[#83CA13] text-sm"
-            to="/privacy-policy"
+            
           >
             Privacy Policy
-          </p>
-          <p
+          </Link>
+          <Link
             className="text-gray-400 hover:text-[#83CA13] text-sm"
-            to="/terms-of-service"
+            to="/terms"
           >
             Terms of Service
-          </p>
+          </Link>
         </div>
 
         {/* Contact Information */}
         <div className="flex flex-col items-start space-y-2 text-left">
           <h4 className="text-base text-white font-bold">Contact Us</h4>
+          
+          <a
+            href="mailto:attohfields@gmail.com"
+            className="text-gray-400 hover:text-[#83CA13] text-sm"
+          >
+            Email: attohfields@gmail.com
+          </a>
           <p className="text-gray-400 hover:text-[#83CA13] text-sm">
-            Email: info@attohfield.com
-          </p>
-          <p className="text-gray-400 hover:text-[#83CA13] text-sm">
-            Phone: 0249277113
+            Phone: +233249277113
           </p>
           <p className="text-gray-400 hover:text-[#83CA13] text-sm">
             Address: Lartebiokorshie, Accra
@@ -136,7 +140,7 @@ const Footer = () => {
       {/* Copyright Notice */}
       <div className="text-center">
         <p className="text-gray-400 text-sm">
-          &copy; {new Date().getFullYear()} attohField. All rights reserved.
+          &copy; {new Date().getFullYear()} Attohfield. All rights reserved.
         </p>
       </div>
     </footer>

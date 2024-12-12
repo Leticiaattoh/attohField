@@ -14,7 +14,7 @@ const About = () => {
     setIsExpanded((prev) => !prev);
   };
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center w-full p-8 relative z-10 bg-[#84ca13b4]">
+    <div className="flex flex-col md:flex-row justify-center items-center w-full p-8 relative z-10  bg-[#A8DA58]">
       {/* Image Section */}
       <div
         className="w-full md:w-1/3 flex justify-center md:justify-end p-4"
@@ -38,12 +38,12 @@ const About = () => {
       >
         <p className="text-lg leading-relaxed">
           <span className="font-extrabold text-3xl">
-            We have been doing this since 2020
+            We have been doing this since 2021
           </span>
           <br />
           {isExpanded ? (
             <>
-              At AttohField, we are passionate about raising healthy, happy pigs
+              At Attohfield, we are passionate about raising healthy, happy pigs
               in a sustainable environment. Our farm is committed to providing
               high-quality pork, ensuring that every product we offer is fresh,
               flavorful, and ethically sourced. With a focus on animal welfare
@@ -54,7 +54,7 @@ const About = () => {
             </>
           ) : (
             <>
-              At AttohField, we are passionate about raising healthy, happy pigs
+              At Attohfield, we are passionate about raising healthy, happy pigs
               in a sustainable environment. Our farm is committed to providing
               high-quality pork, ensuring that every product we offer is fresh,
               flavorful, and ethically sourced...

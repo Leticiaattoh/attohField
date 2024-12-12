@@ -1,9 +1,11 @@
 import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import LandingPage from './pages/LandingPage';
-import ShopNow from './components/ShopNow';
 import ShopNowPage from './pages/ShopNowPage';
-import About from './components/About';
+import PrivacyPage from './pages/PrivacyPage';
+import TermsPage from './pages/TermsPage';
+import ContactPage from './pages/ContactPage';
+import AboutPage from './pages/AboutPage';
 
 function App() {
   const router = createBrowserRouter([
@@ -14,6 +16,23 @@ function App() {
     {
       path: '/shop-now',
       element: <ShopNowPage />
+    },
+    
+    {
+      path: '/privacy-policy',
+      element: <PrivacyPage />
+    },
+    {
+      path: '/terms',
+      element: <TermsPage />
+    },
+    {
+      path: '/contact',
+      element: <ContactPage />
+    },
+    {
+      path: '/about',
+      element: <AboutPage />
     },
     
   ]);
