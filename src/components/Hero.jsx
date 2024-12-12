@@ -17,20 +17,10 @@ const Hero = () => {
       loop="true"
     >
       {/* slider1 */}
-      <div className="relative w-full h-[80vh] md:h-screen">
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 z-10"></div>
-        <div
-          style={{
-            backgroundImage: `url(${welcomeImage})`,
-            backgroundSize: "cover", // Ensures the background image covers the entire container
-            backgroundPosition: "center", // Centers the image
-          }}
-          className="absolute inset-0 bg-cover bg-center"
-        ></div>
+      <div className="relative w-full h-[80vh] md:h-screen bg-white">
         {/* Overlay Text */}
-        <div className="relative z-20 flex flex-col items-center justify-end h-full text-[#3A703F] px-4 lg:text-center sm:text-end">
-          <h1 className="text-3xl font-bold md:text-4xl mb-8 lg:text-5xl">
+        <div className="relative z-20 flex flex-col items-center justify-center h-full text-[#3A703F] px-4 lg:text-center sm:text-end">
+          <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl mb-4  text-[#3A703F] drop-shadow-lg">
             Welcome to Attohfield!
           </h1>
         </div>

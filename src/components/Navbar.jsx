@@ -10,7 +10,7 @@ import {
   
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
-import { faXmark } from "@fortawesome/free-solid-svg-icons"; 
+import { faXmark, faXmarkSquare } from "@fortawesome/free-solid-svg-icons"; 
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
