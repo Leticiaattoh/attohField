@@ -9,9 +9,8 @@ const ShopNow = () => {
     {
       id: 2,
       category: "Fresh Pork",
-      name: "Live Pork",
+      name: "Whole Pork",
       price: "Ghc 45/kg", // Wholesale price remains the same for Live Pork
-      retailInfo: "Retail: 1 kilo and above",
       wholesaleInfo: "Wholesale: 50 kilos and above (Whole pig)",
       image: pork3,
     },
@@ -21,7 +20,6 @@ const ShopNow = () => {
       name: "Dressed Pork (Bone-in)",
       price: "Ghc 65/kg", // Updated retail price
       retailInfo: "Retail: 1 kilo and above",
-      wholesaleInfo: "Wholesale: 50 kilos and above (Whole pig)",
       image: pork4,
     },
     {
@@ -30,23 +28,22 @@ const ShopNow = () => {
       name: "Dressed Pork (Boneless)",
       price: "Ghc 75/kg", // Updated retail price
       retailInfo: "Retail: 1 kilo and above",
-      wholesaleInfo: "Wholesale: 50 kilos and above (Whole pig)",
       image: pork5,
     },
     {
       id: 5,
       category: "Grilled Pork",
-      name: "Grilled Pork (Retail)",
+      name: "Grilled Pork",
       price: "Ghc 45/kg",
-      retailInfo: "10 kilos minimum",
+      retailInfo: "Retail:10 kilos minimum",
       image: pork6,
     },
     {
       id: 6,
       category: "Grilled Pork",
-      name: "Grilled Pork (Wholesale)",
+      name: "Grilled Pork",
       price: "Ghc 45/kg",
-      wholesaleInfo: "50 kilos and above (Whole pig)",
+      wholesaleInfo: "Wholesale:50 kilos and above (Whole pig)",
       image: pork6,
     },
   ];
