@@ -5,12 +5,14 @@ import Contact from '../components/Contact';
 
 const ContactPage = () => {
   return (
-      <div>
-          <Navbar />
-          <Contact />
-          <Footer/>
+    <div>
+      <Navbar />
+      <div className='lg:mt-[10%] sm:[15%]'>
+        <Contact />
+      </div>
+      <Footer />
     </div>
-  )
+  );
 }
 
 export default ContactPage;

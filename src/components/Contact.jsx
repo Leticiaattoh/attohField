@@ -2,13 +2,16 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="py-12 bg-white text-black">
+    <div className="py-28 bg-white text-black">
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">Contact Us</h2>
+        {/* <h2 className="text-3xl font-bold text-center  mb-[5%]">
+          Contact Us
+        </h2> */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Information */}
           <div className="flex flex-col space-y-4">
-            <h4 className="text-lg font-semibold">Get in Touch</h4>
+            
+            <h4 className="text-3xl font-semibold">Get in Touch</h4>
             <p className="text-gray-600">
               We are here to help! Feel free to contact us via email or phone.
             </p>
