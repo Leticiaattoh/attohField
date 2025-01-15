@@ -1,5 +1,5 @@
 import { useState } from "react";
-import welcomeImage from '../assets/Images/welcomeImage.jpg'
+import attohField2 from '../assets/Images/attohField2.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -25,7 +25,7 @@ const Navbar = () => {
         {/* Logo and Company Name */}
         <div className="flex items-center gap-2">
           <img
-            src={welcomeImage}
+            src={attohField2}
             alt="AttohField Logo"
             className="h-14 w-14 border-1 rounded-full"
           />
