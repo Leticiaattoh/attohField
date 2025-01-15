@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faTiktok } from "@fortawesome/free-brands-svg-icons/faTiktok";
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -41,7 +42,7 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faInstagram} />
           </a>
           <a
-            href="https://twitter.com/i/flow/login?lang=en"
+            href="https://x.com/attohfield?s=21"
             target="_blank"
             rel="noopener noreferrer"
             className="text-lg text-white hover:text-[#83CA13] transition-transform duration-300 hover:scale-150"
@@ -63,6 +64,14 @@ const Navbar = () => {
             className="text-lg text-white hover:text-[#83CA13] transition-transform duration-300 hover:scale-150"
           >
             <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a
+            href="https://www.tiktok.com/@attohfield?_t=ZM-8t5Cw867Xr4&_r=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-lg text-white hover:text-[#83CA13] transition-transform duration-300 hover:scale-150"
+          >
+            <FontAwesomeIcon icon={faTiktok} />
           </a>
         </div>
       </div>

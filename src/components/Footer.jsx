@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { faTiktok } from "@fortawesome/free-brands-svg-icons/faTiktok";
 
 const Footer = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -68,9 +69,9 @@ const Footer = () => {
         {/* Legal Links */}
         <div className="flex flex-col items-start space-y-2 text-left">
           <h4 className="text-base text-white font-bold">Legal</h4>
-          <Link to="/privacy-policy"
+          <Link
+            to="/privacy-policy"
             className="text-gray-400 hover:text-[#83CA13] text-sm"
-            
           >
             Privacy Policy
           </Link>
@@ -85,7 +86,7 @@ const Footer = () => {
         {/* Contact Information */}
         <div className="flex flex-col items-start space-y-2 text-left">
           <h4 className="text-base text-white font-bold">Contact Us</h4>
-          
+
           <a
             href="mailto:attohfields@gmail.com"
             className="text-gray-400 hover:text-[#83CA13] text-sm"
@@ -104,20 +105,20 @@ const Footer = () => {
       {/* Social Icons */}
       <div className="flex gap-4 pt-6 justify-center pb-4 w-full">
         <a
-          href="https://twitter.com"
+          href="https://www.instagram.com/attohfield.gh"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-400 hover:text-[#83CA13] transition-transform duration-300 hover:scale-150"
+        >
+          <FontAwesomeIcon icon={faInstagram} className="text-sm" />
+        </a>
+        <a
+          href="https://x.com/attohfield?s=21"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-[#83CA13] transition-transform duration-300 hover:scale-150"
         >
           <FontAwesomeIcon icon={faXTwitter} className="text-sm" />
-        </a>
-        <a
-          href="https://web.facebook.com/people/Attoh-Field/61556844487316/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-gray-400 hover:text-[#83CA13] transition-transform duration-300 hover:scale-150"
-        >
-          <FontAwesomeIcon icon={faFacebook} className="text-sm" />
         </a>
         <a
           href="https://www.linkedin.com"
@@ -128,12 +129,20 @@ const Footer = () => {
           <FontAwesomeIcon icon={faLinkedin} className="text-sm" />
         </a>
         <a
-          href="https://www.instagram.com/attohfield.gh"
+          href="https://web.facebook.com/people/Attoh-Field/61556844487316/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-[#83CA13] transition-transform duration-300 hover:scale-150"
         >
-          <FontAwesomeIcon icon={faInstagram} className="text-sm" />
+          <FontAwesomeIcon icon={faFacebook} className="text-sm" />
+        </a>
+        <a
+          href="https://www.tiktok.com/@attohfield?_t=ZM-8t5Cw867Xr4&_r=1"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-400 hover:text-[#83CA13] transition-transform duration-300 hover:scale-150"
+        >
+          <FontAwesomeIcon icon={faTiktok} className="text-sm" />
         </a>
       </div>
 
