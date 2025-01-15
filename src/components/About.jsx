@@ -4,6 +4,9 @@ import AOS from "aos"; // Import AOS
 import "aos/dist/aos.css"; // Import AOS CSS
 import { useState } from "react";
 
+
+
+
 // Initialize AOS
 AOS.init();
 
@@ -15,6 +18,7 @@ const About = () => {
   };
   return (
     <div className="flex flex-col md:flex-row justify-center items-center w-full p-8 relative z-10  bg-[#A8DA58]">
+
       {/* Image Section */}
       <div
         className="w-full md:w-1/3 flex justify-center md:justify-end p-4"
