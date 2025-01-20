@@ -11,7 +11,6 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Information */}
           <div className="flex flex-col space-y-4">
-            
             <h4 className="text-3xl font-semibold">Get in Touch</h4>
             <p className="text-gray-600">
               We are here to help! Feel free to contact us via email or phone.
@@ -29,13 +28,29 @@ const Contact = () => {
             </div>
 
             {/* Phone Numbers */}
-            <div>
+            {/* <div>
               <h5 className="text-sm font-semibold">Phone</h5>
               <p className="text-gray-600">
                 <strong>Lartebiokorshie:</strong> +233249277113
               </p>
               <p className="text-gray-600">
                 <strong>Spintex:</strong> +233543344036
+              </p>
+            </div> */}
+
+            <div>
+              <h5 className="text-sm font-semibold">Phone</h5>
+              <p className="text-gray-600">
+                <strong>Lartebiokorshie:</strong>
+                <a href="tel:+233249277113" className="hover:underline">
+                  +233249277113
+                </a>
+              </p>
+              <p className="text-gray-600">
+                <strong>Spintex:</strong>
+                <a href="tel:+233543344036" className="hover:underline">
+                  +233543344036
+                </a>
               </p>
             </div>
 

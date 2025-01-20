@@ -44,24 +44,29 @@ const Footer = () => {
                 isDropdownOpen ? "block" : "hidden"
               } group-hover:block`}
             >
-              <ul>
-                <li>
-                  <Link
-                    to=""
-                    className="block px-4 py-2 text-gray-400 hover:text-[#83CA13] text-sm"
-                  >
-                    Lartebiokorshie-+233548453002/ +233249277113
-                  </Link>
+              {/* <ul>
+                <li className="block px-4 py-2 text-gray-400 hover:text-[#83CA13] text-sm">
+                  Lartebiokorshie-+233548453002/ +233249277113
                 </li>
-                <li>
-                  <Link
-                    to=""
-                    className="block px-4 py-2 text-gray-400 hover:text-[#83CA13] text-sm"
-                  >
-                    Spintex-+233543344036
-                  </Link>
+                <li className="block px-4 py-2 text-gray-400 hover:text-[#83CA13] text-sm">
+                  Spintex-+233543344036
                 </li>
-              </ul>
+              </ul> */}
+
+              <div>
+                <p className="block px-4 py-2 text-gray-400 hover:text-[#83CA13] text-sm">
+                  <strong>Lartebiokorshie:</strong>
+                  <a href="tel:+233249277113" className="hover:underline">
+                    +233249277113
+                  </a>
+                </p>
+                <p className="block px-4 py-2 text-gray-400 hover:text-[#83CA13] text-sm">
+                  <strong>Spintex:</strong>
+                  <a href="tel:+233543344036" className="hover:underline">
+                    +233543344036
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -93,12 +98,21 @@ const Footer = () => {
           >
             Email: attohfields@gmail.com
           </a>
-          <p className="text-gray-400 hover:text-[#83CA13] text-sm">
+          {/* <p className="text-gray-400 hover:text-[#83CA13] text-sm">
             Phone: +233249277113
+          </p> */}
+          <p className=" text-gray-400 hover:text-[#83CA13] text-sm">
+            Phone:
+            <a href="tel:+233249277113" className="hover:underline">
+              +233249277113
+            </a>
           </p>
-          <p className="text-gray-400 hover:text-[#83CA13] text-sm">
-            Address: Lartebiokorshie, Accra
-          </p>
+
+          <Link to="/contact">
+            <p className="text-gray-400 hover:text-[#83CA13] text-sm">
+              Address
+            </p>
+          </Link>
         </div>
       </div>
 

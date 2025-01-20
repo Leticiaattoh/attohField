@@ -5,7 +5,6 @@ import pigfarm6 from "../assets/Images/pigfarm6.jpg";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { Carousel } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
-import welcomeImage from "../assets/Images/welcomeImage.jpg"
 
 const Hero = () => {
   return (

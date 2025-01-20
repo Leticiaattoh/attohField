@@ -10,23 +10,23 @@ const ShopNow = () => {
       id: 2,
       category: "Fresh Pork",
       name: "Whole Pork",
-      price: "Ghc 45/kg", // Wholesale price remains the same for Live Pork
+      price: "Ghc 55/kg", // Wholesale price remains the same for Live Pork
       wholesaleInfo: "Wholesale: 50 kilos and above (Whole pig)",
       image: pork3,
     },
     {
       id: 3,
       category: "Fresh Pork",
-      name: "Dressed Pork (Bone-in)",
-      price: "Ghc 65/kg", // Updated retail price
+      name: "Pork Cuts (Bone-in)",
+      price: "Ghc 70/kg", // Updated retail price
       retailInfo: "Retail: 1 kilo and above",
       image: pork4,
     },
     {
       id: 4,
       category: "Fresh Pork",
-      name: "Dressed Pork (Boneless)",
-      price: "Ghc 75/kg", // Updated retail price
+      name: "Pork Cuts (Boneless)",
+      price: "Ghc 80/kg", // Updated retail price
       retailInfo: "Retail: 1 kilo and above",
       image: pork5,
     },
@@ -50,7 +50,7 @@ const ShopNow = () => {
 
   return (
     <div className="w-full bg-[#f7f7f7] py-8 min-h-screen flex flex-col items-center">
-      <h2 className="text-3xl font-extrabold text-center mb-8">Shop Now</h2>
+      <h2 className="text-3xl font-extrabold text-center mt-8 mb-8">Shop Now</h2>
 
       {/* Fresh Pork Section */}
       <h3 className="text-2xl font-bold text-center mb-6">Fresh Pork</h3>
