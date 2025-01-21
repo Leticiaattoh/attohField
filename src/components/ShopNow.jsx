@@ -9,7 +9,7 @@ const ShopNow = () => {
     {
       id: 2,
       category: "Fresh Pork",
-      name: "Whole Pork",
+      name: "Whole Pig",
       price: "Ghc 55/kg", // Wholesale price remains the same for Live Pork
       wholesaleInfo: "Wholesale: 50 kilos and above (Whole pig)",
       image: pork3,
