@@ -2,7 +2,8 @@
 import pork3 from "../assets/Images/pork3.jpg";
 import pork4 from "../assets/Images/pork4.jpg";
 import pork5 from "../assets/Images/pork5.jpg";
-import pork6 from "../assets/Images/pork6.jpg";
+import grilled3 from "../assets/Images/grilled3.jpg";
+import grilled2 from "../assets/Images/grilled2.jpg"
 
 const ShopNow = () => {
   const products = [
@@ -36,7 +37,7 @@ const ShopNow = () => {
       name: "Grilled Pork",
       price: "Ghc 45/kg",
       retailInfo: "Retail:10 kilos minimum",
-      image: pork6,
+      image: grilled3,
     },
     {
       id: 6,
@@ -44,7 +45,7 @@ const ShopNow = () => {
       name: "Grilled Pork",
       price: "Ghc 45/kg",
       wholesaleInfo: "Wholesale:50 kilos and above (Whole pig)",
-      image: pork6,
+      image: grilled2,
     },
   ];
 
