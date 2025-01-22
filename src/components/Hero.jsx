@@ -19,7 +19,7 @@ const Hero = () => {
       <div className="relative w-full h-[80vh] md:h-screen bg-white">
         {/* Overlay Text */}
         <div className="relative z-20 flex flex-col items-center justify-center h-full text-[#3A703F] px-4 lg:text-center sm:text-end">
-          <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl mb-4  text-[#3A703F] drop-shadow-lg">
+          <h1 className="text-xl font-bold md:text-4xl lg:text-5xl mb-4  text-[#3A703F] drop-shadow-lg">
             Awaiting welcome image!
           </h1>
         </div>
