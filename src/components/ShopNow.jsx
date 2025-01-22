@@ -1,5 +1,5 @@
 
-import pork3 from "../assets/Images/pork3.jpg";
+import fresh1 from "../assets/Images/fresh1.jpg";
 import pork4 from "../assets/Images/pork4.jpg";
 import pork5 from "../assets/Images/pork5.jpg";
 import grilled3 from "../assets/Images/grilled3.jpg";
@@ -13,7 +13,7 @@ const ShopNow = () => {
       name: "Whole Pig",
       price: "Ghc 55/kg", // Wholesale price remains the same for Live Pork
       wholesaleInfo: "Wholesale: 50 kilos and above (Whole pig)",
-      image: pork3,
+      image: fresh1,
     },
     {
       id: 3,
