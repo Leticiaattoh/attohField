@@ -34,15 +34,15 @@ const Hero = () => {
           className="absolute inset-0 bg-cover bg-center"
         ></div>
         {/* Overlay Text */}
-        <div className="relative z-20 flex flex-col items-start justify-center h-full text-white px-4 text-center">
-          <p className="text-xl md:text-2xl lg:text-3xl mb-4">
+        <div className="relative z-20 flex flex-col lg:ml-10 lg:items-start md:items-center justify-center h-full text-white px-4 text-center">
+          <p className="text-xl md:text-2xl  lg:ml-1 lg:text-3xl mb-4">
             Pure & Organic Pork
           </p>
           <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl mb-4">
             Savor the Flavor of Quality Pork!
           </h1>
           <Link to="/shop-now">
-            <button className="flex items-center justify-center gap-5 border-2 border-white bg-[#3A703F] hover:bg-[#83CA13] focus:outline-none focus:ring border-1 px-4 py-2 w-[250px] h-[70px] transition-transform duration-300 hover:scale-105 rounded-lg text-white font-bold text-3xl shadow-2xl">
+            <button className="flex mx-auto sm:ml-[20%] items-center justify-center gap-5 border-2 border-white bg-[#3A703F] hover:bg-[#83CA13] focus:outline-none focus:ring border-1 px-4 py-2 w-[250px] h-[70px] transition-transform duration-300 hover:scale-105 rounded-lg text-white font-bold text-3xl shadow-2xl">
               Discover
               <span className="mt-2">
                 <FaArrowAltCircleRight />
@@ -61,7 +61,7 @@ const Hero = () => {
           className="absolute inset-0 bg-cover bg-center"
         ></div>
         {/* Overlay Text */}
-        <div className="relative z-20 flex flex-col items-start justify-center h-full text-white px-4 text-center">
+        <div className="relative z-20 flex flex-col  lg:ml-10 lg:items-start md:items-center justify-center h-full text-white px-4 text-center">
           <p className="text-xl md:text-2xl lg:text-3xl mb-4">
             Pure & Organic Pork
           </p>
@@ -69,7 +69,7 @@ const Hero = () => {
             Take your tastebuds on an adventure!
           </h1>
           <Link to="/shop-now">
-            <button className="flex items-center justify-center gap-5 border-2 border-white bg-[#3A703F] hover:bg-[#83CA13] focus:outline-none focus:ring border-1 px-4 py-2 w-[250px] h-[70px] transition-transform duration-300 hover:scale-105 rounded-lg text-white font-bold text-3xl shadow-2xl">
+            <button className="flex mx-auto sm:ml-[20%] items-center justify-center gap-5 border-2 border-white bg-[#3A703F] hover:bg-[#83CA13] focus:outline-none focus:ring border-1 px-4 py-2 w-[250px] h-[70px] transition-transform duration-300 hover:scale-105 rounded-lg text-white font-bold text-3xl shadow-2xl">
               Discover
               <span className="mt-2">
                 <FaArrowAltCircleRight />
@@ -88,15 +88,15 @@ const Hero = () => {
           className="absolute inset-0 bg-cover bg-center"
         ></div>
         {/* Overlay Text */}
-        <div className="relative z-20 flex flex-col items-start justify-center h-full text-white px-4 text-center">
-          <p className="text-xl md:text-2xl lg:text-3xl mb-4">
+        <div className="relative  lg:ml-10 z-20 flex flex-col lg:items-start md:items-center justify-center h-full text-white px-4 text-center">
+          <p className="text-xl md:text-2xl lg:ml-1 lg:text-3xl mb-4">
             Pure & Organic Pork
           </p>
           <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl mb-4">
             Purely Pork, Perfectly Fresh!
           </h1>
           <Link to="/shop-now">
-            <button className="flex items-center justify-center gap-5 border-2 border-white bg-[#3A703F] hover:bg-[#83CA13] focus:outline-none focus:ring border-1 px-4 py-2 w-[250px] h-[70px] transition-transform duration-300 hover:scale-105 rounded-lg text-white font-bold text-3xl shadow-2xl">
+            <button className="flex mx-auto sm:ml-[20%] items-center justify-center gap-5 border-2 border-white bg-[#3A703F] hover:bg-[#83CA13] focus:outline-none focus:ring border-1 px-4 py-2 w-[250px] h-[70px] transition-transform duration-300 hover:scale-105 rounded-lg text-white font-bold text-3xl shadow-2xl">
               Discover
               <span className="mt-2">
                 <FaArrowAltCircleRight />

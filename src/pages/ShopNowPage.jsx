@@ -2,12 +2,12 @@ import Navbar from "../components/Navbar";
 import React from "react";
 import ShopNow from "../components/ShopNow";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 const ShopNowPage = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Helmet>
         <title> Products | Attohfield</title>
         <meta
@@ -15,6 +15,7 @@ const ShopNowPage = () => {
           content="Find your package of preference among our amazing products!"
         />
       </Helmet>
+      <ScrollRestoration />
       <Navbar />
       <ShopNow />
       <Link to="/">

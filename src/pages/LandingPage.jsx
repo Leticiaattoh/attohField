@@ -6,17 +6,16 @@ import Products from '../components/Products';
 import ShopNow from '../components/ShopNow';
 import Footer from '../components/Footer';
 import { Helmet } from "react-helmet";
+import { ScrollRestoration } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Helmet>
         <title> Home | Attohfield</title>
-        <meta
-          name="description"
-          content="Welcome to the Attohfield family!"
-        />
+        <meta name="description" content="Welcome to the Attohfield family!" />
       </Helmet>
+      <ScrollRestoration />
       <Navbar />
       <Hero />
       <div className="mt-[10%]">
