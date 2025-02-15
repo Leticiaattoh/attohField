@@ -2,6 +2,7 @@
 import hero from "../assets/Images/hero.jpeg";
 import pigfarm9 from "../assets/Images/pigfarm9.jpg";
 import pigfarm6 from "../assets/Images/pigfarm6.jpg";
+import attohfield3 from "../assets/Images/attohfield3.jpg"
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { Carousel } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
@@ -17,11 +18,37 @@ const Hero = () => {
     >
       {/* slider1 */}
       <div className="relative w-full h-[80vh] md:h-screen bg-white">
-        {/* Overlay Text */}
-        <div className="relative z-20 flex flex-col items-center justify-center h-full text-[#3A703F] px-4 lg:text-center sm:text-end">
-          <h1 className="text-xl font-bold md:text-4xl lg:text-5xl mb-4  text-[#3A703F] drop-shadow-lg">
-            Awaiting welcome image!
+        {/* Background Image */}
+        <div
+          style={{ backgroundImage: `url(${attohfield3})` }}
+          className="absolute inset-0 bg-cover bg-center"
+        ></div>
+
+        {/* Overlay */}
+        <div className="relative z-20 flex flex-col items-center justify-center h-full px-4 text-center">
+          <h1 className="text-2xl font-bold md:text-5xl text-black drop-shadow-lg">
+            Welcome to AttohField
           </h1>
+
+          <p className="mt-4 px-4 py-1 text-lg font-semibold text-black bg-[#83CA13] rounded-full">
+            Premium Quality Pork, Fresh from Our Farm to Your Table
+          </p>
+
+          <p className="mt-4 max-w-2xl text-gray-900 mb-[10%] text-sm md:text-base leading-relaxed">
+            From juicy pork chops to tender ribs and grills, our meat is packed
+            with flavor and
+            <span className="hidden md:inline">
+              {" "}
+              <br />{" "}
+            </span>
+            nutrition. Whether you're a restaurant, butcher, or home cook, we
+            guarantee
+            <span className="hidden md:inline">
+              {" "}
+              <br />{" "}
+            </span>
+            pork that meets the highest standards.
+          </p>
         </div>
       </div>
 
