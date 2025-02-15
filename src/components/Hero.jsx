@@ -36,18 +36,17 @@ const Hero = () => {
 
           <p className="mt-4 max-w-2xl text-gray-900 mb-[10%] text-sm md:text-base leading-relaxed">
             From juicy pork chops to tender ribs and grills, our meat is packed
-            with flavor and
+            with
             <span className="hidden md:inline">
               {" "}
               <br />{" "}
             </span>
-            nutrition. Whether you're a restaurant, butcher, or home cook, we
-            guarantee
+            flavor and nutrition. Whether you're a restaurant, butcher, or home
             <span className="hidden md:inline">
               {" "}
               <br />{" "}
             </span>
-            pork that meets the highest standards.
+            cook, we guarantee pork that meets the highest standards.
           </p>
         </div>
       </div>
