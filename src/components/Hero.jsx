@@ -17,7 +17,7 @@ const Hero = () => {
       loop="true"
     >
       {/* slider1 */}
-      <div className="relative w-full h-[80vh] md:h-screen bg-white">
+      <div className="relative w-full h-full md:h-screen bg-white">
         {/* Background Image */}
         <div
           style={{ backgroundImage: `url(${attohfield3})` }}
@@ -30,17 +30,17 @@ const Hero = () => {
             Welcome to AttohField
           </h1>
 
-          <p className="mt-4 px-4 py-1 text-lg font-semibold text-black bg-[#83CA13] rounded-full">
+          <p className="mt-4 px-4 py-1 lg:text-lg sm:text-sm font-semibold text-black bg-[#83CA13] rounded-full">
             Premium Quality Pork, Fresh from Our Farm to Your Table
           </p>
 
-          <p className="mt-4 max-w-2xl text-gray-900 mb-[10%] text-sm md:text-base leading-relaxed">
+          <p className="mt-4 max-w-2xl text-gray-900 mb-[10%] sm:text-xs lg:text-sm md:text-base leading-relaxed">
             From juicy pork chops to tender ribs and grills, our meat is packed
             with
             <span className="hidden md:inline">
               {" "}
               <br />{" "}
-            </span>
+            </span>{" "}
             flavor and nutrition. Whether you're a restaurant, butcher, or home
             <span className="hidden md:inline">
               {" "}
