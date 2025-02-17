@@ -10,11 +10,12 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <Carousel
-      className="h-screen w-full mx-auto rounded-[2%] overflow-y-hidden"
+      className="h-screen w-full mx-auto rounded-[2%] overflow-y-hidden [&>button]:hidden"
       transition={{ duration: 0.5 }}
       autoplay="true"
       autoplayDelay={4000}
       loop="true"
+      navigation={false}
     >
       {/* slider1 */}
       <div className="relative w-full h-full md:h-screen bg-white">
