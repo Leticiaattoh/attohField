@@ -33,15 +33,15 @@ const ShopNow = () => {
     },
     {
       id: 5,
-      category: "Grilled Pig",
-      name: "Grilled Pig",
+      category: "Grills",
+      name: "Grilled Pork",
       price: "Ghc 150/kg",
       retailInfo: "Retail:10 kilos minimum",
       image: grilled3,
     },
     {
       id: 6,
-      category: "Grilled Pig",
+      category: "Grills",
       name: "Grilled Pig (Whole)",
       price: "Ghc 120/kg",
       wholesaleInfo: "Wholesale:50 kilos and above",
@@ -93,10 +93,10 @@ const ShopNow = () => {
       </div>
 
       {/* Grilled Pork Section */}
-      <h3 className="text-2xl font-bold text-center mb-6">Grilled Pig</h3>
+      <h3 className="text-2xl font-bold text-center mb-6">Grills</h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:mr-[-50%] justify-center">
         {products
-          .filter((product) => product.category === "Grilled Pig")
+          .filter((product) => product.category === "Grills")
           .map((product) => (
             <div
               key={product.id}
